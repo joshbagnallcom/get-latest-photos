@@ -1,0 +1,31 @@
+.photos-container * {
+  box-sizing: border-box;
+}
+
+.photos-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.photos-container .get-latest-photos-image {
+  margin: 1%;
+  width: 18%;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .photos-container .get-latest-photos-image {
+    margin: 1%;
+    width: 31%;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 600px) {
+  .photos-container .get-latest-photos-image {
+    margin: 1%;
+    width: 98%;
+  }
+}
